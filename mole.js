@@ -1,40 +1,40 @@
 let currMoleTile;
 let currPlantTile;
 let score = 0;
-let gameOver = false;
+let gameOver = false;   
 
 // const btnNew = document.querySelector(".btn-new");
 
 window.onload = function () {
-  setGame();
+  setGame();    
 };
 
 function setGame() {
   //set up the grid in html
   for (let i = 0; i < 9; i++) {
     //i goes from 0 to 8, stops at 9
-    //<div id="0-8"></div>
+    //<div id="0-8"></div>    
     let tile = document.createElement("div");
     tile.id = i.toString();
     tile.addEventListener("click", selectTile);
-    document.getElementById("board").appendChild(tile);
+    document.getElementById("board").appendChild(tile);    
   }
   setInterval(setMole, 1000); // 1000 miliseconds = 1 second, every 1 second call setMole
   setInterval(setPlant, 2000); // 2000 miliseconds = 2 seconds, every 2 second call setPlant
 }
-
+   
 function getRandomTile() {
   //math.random --> 0-1 --> (0-1) * 9 = (0-9) --> round down to (0-8) integers
   let num = Math.floor(Math.random() * 9);
-  return num.toString();
+  return num.toString(); 
 }
 
 function setMole() {
   if (gameOver) {
-    return;
+    return;  
   }
   if (currMoleTile) {
-    currMoleTile.innerHTML = "";
+    currMoleTile.innerHTML = "";    
   }
   let mole = document.createElement("img");
   mole.src = "./monty-mole.png";

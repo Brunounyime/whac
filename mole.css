@@ -23,7 +23,7 @@ body {
 #board div {
   /* board = 540 x 540, divide into 3x3 tiles --> 180 x 180 per div */
   width: 180px;
-  height: 180px;
+  height: 180px;    
   background-image: url("./pipe.png");
   background-size: cover;
 }
@@ -34,7 +34,7 @@ body {
   height: 100px;
 
   user-select: none;
-  -moz-user-select: none;
+  -moz-user-select: none;   
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none;
@@ -46,7 +46,7 @@ body {
   align-items: center;
 
 }
-
+    
 button {
   padding: 10px;
   font-size: 30px;
