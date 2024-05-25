@@ -20,16 +20,16 @@ function setGame() {
     document.getElementById("board").appendChild(tile);    
   }
   setInterval(setMole, 1000); // 1000 miliseconds = 1 second, every 1 second call setMole
-  setInterval(setPlant, 2000); // 2000 miliseconds = 2 seconds, every 2 second call setPlant
+  setInterval(setPlant, 2000); // 2000 miliseconds = 2 seconds, every 2 second call setPlant        
 }
-   
+      
 function getRandomTile() {
   //math.random --> 0-1 --> (0-1) * 9 = (0-9) --> round down to (0-8) integers
   let num = Math.floor(Math.random() * 9);
   return num.toString(); 
 }
 
-function setMole() {
+function setMole() {     
   if (gameOver) {
     return;  
   }

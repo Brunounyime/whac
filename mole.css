@@ -26,12 +26,12 @@ body {
   height: 180px;    
   background-image: url("./pipe.png");
   background-size: cover;
-}
+}    
 
 #board div img {
   /* all img tags inside tiles */
   width: 100px;
-  height: 100px;
+  height: 100px;    
 
   user-select: none;
   -moz-user-select: none;   
@@ -41,7 +41,7 @@ body {
 }
 
 .nav {
-  display: flex;
+  display: flex;   
   justify-content: space-around;
   align-items: center;
 
